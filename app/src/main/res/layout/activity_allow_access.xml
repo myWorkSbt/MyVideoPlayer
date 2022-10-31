@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:layout_height="match_parent"
+    tools:context=".allow_access">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/ic_allow_access"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/ic_allow_access"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/permission_some_text_tv"
+        android:text=" Thanks for installing our Video Player App"
+        android:layout_marginTop="9dp"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/ic_allow_access"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="For Playing videos in this app , You have to give permission to access  your media Files"
+        android:layout_marginTop="17sp"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@id/permission_some_text_tv"
+        />
+
+    <Button
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/btn_allow_access"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=" ALLOW ACCESS "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
